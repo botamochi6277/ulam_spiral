@@ -1,7 +1,7 @@
 import matplotlib.pyplot as plt
 import numpy as np
 import matplotlib.font_manager as fm
-from typing import List
+from typing import List, Tuple
 
 
 def prime_factorize(n: int) -> List[int]:
@@ -37,6 +37,7 @@ def sq_edge_length(i: int) -> int:
 
 
 def draw(num_edges: int = 20,
+         figsize: Tuple[int, int] = (800, 600),
          no_color: str = '#cccccc',
          prime_no_color: str = '#4A00E0',
          marker_color: str = '#ffffff',
@@ -47,7 +48,7 @@ def draw(num_edges: int = 20,
                     )
     edge_lengths = [sq_edge_length(i) for i in range(num_edges)]
 
-    fig, ax = plt.subplots()
+    fig, ax = plt.subplots(figsize=(figsize[0]/72, figsize[1]/72))
     fig.patch.set_facecolor(bg_color)
     fig.patch.set_alpha(1.0)
 
