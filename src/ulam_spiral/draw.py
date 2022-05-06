@@ -80,11 +80,12 @@ def draw(num_edges: int = 20,
 
     ax.set_aspect('equal')
     ax.axis('off')
-    if not no_window:
-        plt.show()
 
     if len(output_name) > 0:
         plt.savefig(output_name)
+
+    if not no_window:
+        plt.show()
 
 
 if __name__ == '__main__':
