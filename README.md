@@ -6,26 +6,14 @@ python script to draw [ulam spiral](https://en.wikipedia.org/wiki/Ulam_spiral)
 
 ## Usage
 
+Basic:
+
 ```bash
 pipenv run python src/ulam_spiral/draw.py
 ```
 
-```bash
-usage: draw.py [-h] [-n NUM_EDGES] [-s FIGSIZE FIGSIZE] [--no_color NO_COLOR] [--prime_no_color PRIME_NO_COLOR] [--marker_color MARKER_COLOR]
-               [--prime_marker_color PRIME_MARKER_COLOR] [--markersize MARKERSIZE] [--fontsize FONTSIZE] [--bg_color BG_COLOR] [--no_window]
-               [-o OUTPUT_NAME]
+Show options:
 
-optional arguments:
-  -h, --help            show this help message and exit
-  -n NUM_EDGES, --num_edges NUM_EDGES
-  -s FIGSIZE FIGSIZE, --figsize FIGSIZE FIGSIZE
-  --no_color NO_COLOR
-  --prime_no_color PRIME_NO_COLOR
-  --marker_color MARKER_COLOR
-  --prime_marker_color PRIME_MARKER_COLOR
-  --markersize MARKERSIZE
-  --fontsize FONTSIZE
-  --bg_color BG_COLOR
-  --no_window
-  -o OUTPUT_NAME, --output_name OUTPUT_NAME
+```bash
+pipenv run python src/ulam_spiral/draw.py -h
 ```

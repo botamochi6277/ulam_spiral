@@ -43,6 +43,7 @@ def draw(num_edges: int = 20,
          prime_no_color: str = '#4A00E0',
          marker_color: str = '#ffffff',
          prime_marker_color: str = '#8E2DE2',
+         marker: str = 'o',
          markersize: float = 32,
          fontsize: float = 16,
          bg_color: str = '#f7f7f7',
@@ -69,7 +70,7 @@ def draw(num_edges: int = 20,
                 if len(p) == 1:
                     no_c = prime_no_color
                     m_c = prime_marker_color
-            ax.plot(xy[0], xy[1], 'o', color=m_c,
+            ax.plot(xy[0], xy[1], marker=marker, color=m_c,
                     markersize=markersize)  # background
             ax.text(xy[0], xy[1], f'{n}', color=no_c,
                     va='center', ha='center', fontsize=fontsize)
@@ -95,6 +96,7 @@ if __name__ == '__main__':
                         nargs=2, default=(800, 600))
     parser.add_argument('--no_color', default='#cccccc')
     parser.add_argument('--prime_no_color', default='#4A00E0')
+    parser.add_argument('--marker', default='o')
     parser.add_argument('--marker_color', default='#ffffff')
     parser.add_argument('--prime_marker_color', default='#8E2DE2')
     parser.add_argument('--markersize', type=int, default=32)
